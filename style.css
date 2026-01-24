@@ -373,7 +373,7 @@ section {
 
 .btn-color-2:hover {
     background: none;
-    color: var(--accent-color);
+    color: #d2cdc1;
     border: var(--accent-color) 0.1rem solid;
     box-shadow: 0 0 20px rgba(128,0,128,0.3);
 }
