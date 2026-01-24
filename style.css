@@ -1,3 +1,7 @@
+:root {
+  --accent-color: rgb(22, 233, 222);
+}
+
 /*GENERAL*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -116,7 +120,7 @@ a {
 }
 
 nav a:hover {
-    color: purple;
+    color: var(--accent-color);
     text-decoration: underline;
     text-underline-offset: 0.8rem;
 }
@@ -367,15 +371,15 @@ section {
 
 .btn-color-2:hover {
     background: none;
-    color: purple;
-    border: purple 0.1rem solid;
+    color: var(--accent-color);
+    border: var(--accent-color) 0.1rem solid;
     box-shadow: 0 0 20px rgba(128,0,128,0.3);
 }
 
 .btn-color-1:hover {
-    background: purple;
+    background: var(--accent-color);
     color: #d2cdc1;
-    border: purple;
+    border: var(--accent-color);
     box-shadow: 0 0 20px rgba(128,0,128,0.3);
 }
 
@@ -458,8 +462,8 @@ btn-color-2:hover {
 
 .details-container:hover {
     background: #0a0a0a;
-    color: purple;
-    border: purple 0.1rem solid;
+    color: var(--accent-color);
+    border: var(--accent-color) 0.1rem solid;
     box-shadow: 0 0 20px rgba(128,0,128,0.3);
 }
 
@@ -565,8 +569,8 @@ article h3{
 
 .sk-details-container:hover{
     background: #0a0a0a;
-    color: purple;
-    border: purple 0.1rem solid;
+    color: var(--accent-color);
+    border: var(--accent-color) 0.1rem solid;
     box-shadow: 0 0 15px rgba(128,0,128,0.2);
 }
 
@@ -688,7 +692,7 @@ article h3{
 }
 
 .contact-info-upper-container:hover {
-    border-color: purple;
+    border-color: var(--accent-color);
     box-shadow: 0 0 30px rgba(128, 0, 128, 0.14);
 }
 
@@ -709,8 +713,8 @@ article h3{
 }
 
 .contact-info-container img:hover {
-    color: purple;
-    fill: purple;
+    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 
@@ -790,4 +794,10 @@ footer p {
 
 #all-projects .title{
     font-weight: 600;
+}
+.logo img {
+  border: 0.1rem solid #d2cdc1;
+  border-radius: 0.75rem;
+  padding: 0.3rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
