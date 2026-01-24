@@ -1,5 +1,5 @@
 :root {
-  --accent-color: rgb(22, 233, 222);
+  --accent-color: rgb(152, 239, 235);
 }
 
 /*GENERAL*/
@@ -795,9 +795,9 @@ footer p {
 #all-projects .title{
     font-weight: 600;
 }
-.logo img {
+.home-pic {
   border: 0.1rem solid #d2cdc1;
-  border-radius: 0.75rem;
-  padding: 0.3rem;
+  border-radius: 50%;
+  padding: 0.4rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
