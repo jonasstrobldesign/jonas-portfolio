@@ -1,5 +1,7 @@
 :root {
   --accent-color: rgb(152, 239, 235);
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
 }
 
 /*GENERAL*/
@@ -17,7 +19,7 @@
 }
 
 body {   
-    font-family: "Montserrat", "Poppins" ;
+    font-family: var(--font-primary), var(--font-secondary) ;
     background-color: #0e0e0e;
 
 }
@@ -406,11 +408,11 @@ btn-color-2:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    font-family: "Poppins";
+    font-family: var(--font-secondary);
 }
 
 .title2 {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary), sans-serif;
     color: #efebe2;
     margin-top: 0.3rem;
     font-weight: 500;
@@ -480,7 +482,7 @@ btn-color-2:hover {
 }
 
 .text-container {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary), sans-serif;
     font-weight: 300;
     color: #d2cdc1;
     padding-left: 2rem;
@@ -501,7 +503,7 @@ btn-color-2:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    font-family: "Poppins";
+    font-family: var(--font-secondary);
     background-position: center;
     background-attachment: fixed;
     height: fit-content;
@@ -585,7 +587,7 @@ article h3{
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    font-family: "Poppins";
+    font-family: var(--font-secondary);
     height: fit-content;
     padding-bottom: 3rem;
 }
@@ -782,7 +784,7 @@ footer p {
     background-blend-mode: overlay;
     background-position: center;
     background-attachment: fixed;
-    font-family: "Poppins";
+    font-family: var(--font-secondary);
     height: auto;
     padding-bottom: 2rem;
 }
