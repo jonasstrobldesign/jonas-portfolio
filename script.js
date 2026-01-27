@@ -1,32 +1,42 @@
 // Intro Screen
 
 let intro = document.querySelector('.intro');
-let logo = document.querySelector('.logo-header');
 let logoSpan = document.querySelectorAll('.intro-logo');
 
-window.addEventListener('DOMContentLoaded', ()=>{
-    setTimeout(()=>{
+window.addEventListener('DOMContentLoaded', () => {
+    const letterDelay = 150; // speed of typing
+    const fadeDelay = 60;    // speed of fade
+    const holdAfterTyping = 1200; // pause before fade starts
 
-        logoSpan.forEach((span, idx)=>{
-            setTimeout(()=>{
-                span.classList.add('active');
-            }, (idx+1)*150)
+    // 1. Animate letters in
+    logoSpan.forEach((span, idx) => {
+        setTimeout(() => {
+            span.classList.add('active');
+        }, idx * letterDelay);
+    });
+
+    // Total time for typing
+    const typingDuration = logoSpan.length * letterDelay;
+
+    // 2. Fade letters out
+    setTimeout(() => {
+        logoSpan.forEach((span, idx) => {
+            setTimeout(() => {
+                span.classList.remove('active');
+                span.classList.add('fade');
+            }, idx * fadeDelay);
         });
+    }, typingDuration + holdAfterTyping);
 
-        setTimeout(()=>{
-            logoSpan.forEach((span,idx)=>{
-                setTimeout(()=>{
-                    span.classList.remove('active');
-                    span.classList.add('fade');
-                }, (idx+1)*50)
-            })
-        },2000)
+    // Total fade duration
+    const fadeDuration = logoSpan.length * fadeDelay;
 
-        setTimeout(()=>{
-            intro.style.top='-100vh';
-        },2300)
-    })
-})
+    // 3. Slide intro away ONLY after everything finishes
+    setTimeout(() => {
+        intro.style.top = '-100vh';
+    }, typingDuration + holdAfterTyping + fadeDuration + 300);
+});
+
 
 // Scroll to top upon reload
 
