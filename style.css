@@ -274,12 +274,13 @@ section {
 
 
 .home-pic {
-    display: flex;
+    
     height: 400px;
     width: 400px;
     margin: 9.4rem 0;
     border-radius: 50%;
-    box-shadow: 0 0 25px rgba(0, 0, 0,0.4);
+    object-fit: cover;
+    
 }
 
 .section__text {
@@ -797,9 +798,4 @@ footer p {
 #all-projects .title{
     font-weight: 600;
 }
-.home-pic {
-  border: 0.1rem solid #d2cdc1;
-  border-radius: 50%;
-  padding: 0.4rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-}
+
